@@ -1,0 +1,6 @@
+RegisterNetEvent(GetCurrentResourceName()..":showNotify")
+AddEventHandler(GetCurrentResourceName()..":showNotify", function(message)
+    SetNotificationTextEntry('STRING')
+    AddTextComponentString(message)
+    DrawNotification(false, true)
+end)
